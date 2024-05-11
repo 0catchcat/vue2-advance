@@ -1,5 +1,5 @@
-import Vue from 'vue' //这里引入的是残缺版的vue,是没有模版解析器是不能写template的 vue.runtime.esm.js
-import App from './App.vue'
+import Vue from "vue"; //这里引入的是残缺版的vue,是没有模版解析器是不能写template的 vue.runtime.esm.js
+import App from "./App.vue";
 // import Vue from 'vue/dist/vue';
 
 Vue.config.productionTip = false;
@@ -19,10 +19,10 @@ new Vue({
   // template: `<App></App>`,
   // components: { App },
   // render: h => h(App),
-  el:'#app',
-  render: h => h(App),
+  el: "#app",
+  render: (h) => h(App),
   //vue 传递帮你调render函数并传递了一个名为createElement的函数,这里的第一个参数代表h1元素，第二个参数是h1的内容
   // render:(createElement) => createElement('h1',"迟缓")
   // el:'#app',
   // template: '<h1>你好</h1>'
-}).$mount('#app')
+}).$mount("#app");
