@@ -16,13 +16,13 @@ Vue.config.productionTip = false;
 */
 
 new Vue({
-  // template: `<App></App>`,
-  // components: { App },
-  // render: h => h(App),
-  el: "#app",
-  render: (h) => h(App),
-  //vue 传递帮你调render函数并传递了一个名为createElement的函数,这里的第一个参数代表h1元素，第二个参数是h1的内容
-  // render:(createElement) => createElement('h1',"迟缓")
-  // el:'#app',
-  // template: '<h1>你好</h1>'
+	// template: `<App></App>`,
+	// components: { App },
+	// render: h => h(App),
+	el: "#app",
+	render: (h) => h(App),
+	//vue 传递帮你调render函数并传递了一个名为createElement的函数,这里的第一个参数代表h1元素，第二个参数是h1的内容
+	// render:(createElement) => createElement('h1',"迟缓")
+	// el:'#app',
+	// template: '<h1>你好</h1>'
 }).$mount("#app");
