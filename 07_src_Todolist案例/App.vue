@@ -45,7 +45,7 @@ export default {
             todo.done = !todo.done
         },
         deleteTodo(id) {
-            this.todos = this.todos.filter(todo => todo.id !== id)
+            this.todos = this.todos.filter(todo => todo.id !== id) // filter不会返回新数组,故将新数组重新赋值给原数组！
         },
         checkAllTodo(done) {
             this.todos.forEach(todo => (todo.done = done))
